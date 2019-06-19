@@ -1,16 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
-    <androidx.appcompat.widget.AppCompatEditText
-        android:layout_width="wrap_content"
+
+    <com.nex3z.flowlayout.FlowLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SwitchIcon"
-        android:textSize="25sp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        app:flChildSpacing="auto"
+        app:flChildSpacingForLastRow="align"
+        app:flRowSpacing="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.github.zagum.switchicon.SwitchIconView
+            android:id="@+id/switchIconView1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="8dp"
+            app:si_animation_duration="500"
+            app:si_disabled_alpha=".5"
+            app:si_disabled_color="#b7b7b7"
+            app:si_enabled="false"
+            app:si_no_dash="true"
+            app:si_tint_color="#ff3c00"
+            app:srcCompat="@drawable/ic_switch_icon_v5" />
+
+
+        <com.github.zagum.switchicon.SwitchIconView
+            android:id="@+id/switchIconView2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="8dp"
+            android:scaleType="fitXY"
+            app:si_tint_color="#7956f9"
+            app:srcCompat="@drawable/ic_switch_icon_timer" />
+
+        <com.github.zagum.switchicon.SwitchIconView
+            android:id="@+id/switchIconView3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="8dp"
+            app:si_disabled_alpha=".5"
+            app:si_disabled_color="#dadada"
+            app:si_enabled="false"
+            app:si_tint_color="#ffb700"
+            app:srcCompat="@drawable/ic_switch_icon_v4" />
+
+        <com.github.zagum.switchicon.SwitchIconView
+            android:id="@+id/switchIconView4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="8dp"
+            app:si_disabled_alpha=".5"
+            app:si_disabled_color="#AA7575"
+            app:si_enabled="false"
+            app:si_tint_color="#F11403"
+            app:srcCompat="@drawable/ic_switch_icon_v3" />
+
+        <com.github.zagum.switchicon.SwitchIconView
+            android:id="@+id/switchIconView5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="8dp"
+            app:si_disabled_alpha=".5"
+            app:si_disabled_color="#8FE3EC"
+            app:si_enabled="false"
+            app:si_tint_color="#04DDF8"
+            app:srcCompat="@drawable/ic_switch_icon_v6" />
+
+        <com.github.zagum.switchicon.SwitchIconView
+            android:id="@+id/switchIconView6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="8dp"
+            app:si_disabled_alpha=".5"
+            app:si_disabled_color="#82BD82"
+            app:si_enabled="false"
+            app:si_tint_color="#21A827"
+            app:srcCompat="@drawable/ic_switch_icon_v1" />
+
+        <com.github.zagum.switchicon.SwitchIconView
+            android:id="@+id/switchIconView7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="8dp"
+            app:si_disabled_alpha=".5"
+            app:si_disabled_color="#A46EAD"
+            app:si_enabled="false"
+            app:si_tint_color="#9B11B3"
+            app:srcCompat="@drawable/ic_switch_icon_v2" />
+
+        <com.github.zagum.switchicon.SwitchIconView
+            android:id="@+id/switchIconView8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="8dp"
+            android:scaleType="fitXY"
+            app:si_tint_color="#7956f9"
+            app:srcCompat="@drawable/ic_switch_icon_test1" />
+
+        <com.github.zagum.switchicon.SwitchIconView
+            android:id="@+id/switchIconView9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="8dp"
+            android:scaleType="fitXY"
+            app:si_tint_color="#F44336"
+            app:srcCompat="@drawable/ic_switch_icon_test2" />
+
+    </com.nex3z.flowlayout.FlowLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
