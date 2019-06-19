@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">LibraryShowDemo</string>
+    <string-array name="phoneRegexType">
+        <item>所有号码（手机卡 + 数据卡 + 上网卡）</item>
+        <item>所有支持短信功能的号码（手机卡 + 上网卡）</item>
+        <item>所有手机卡</item>
+        <item>移动卡</item>
+        <item>联通卡</item>
+        <item>电信卡</item>
+        <item>所有虚拟手机卡</item>
+        <item>虚拟移动卡</item>
+        <item>虚拟联通卡</item>
+        <item>虚拟电信卡</item>
+    </string-array>
 </resources>

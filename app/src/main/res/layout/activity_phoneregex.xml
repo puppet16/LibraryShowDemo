@@ -1,16 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
+
     <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/phoneEdtNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PhoneRegex"
+        android:layout_marginTop="100dp"
+        android:hint="输入手机号"
+        android:inputType="phone"
+        android:minWidth="200dp"
+        android:text=""
+        android:textColor="#1B1B1B"
+        android:textColorHint="#C9C8C8"
         android:textSize="25sp"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/phoneSpinnerRegexType"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:entries="@array/phoneRegexType"
+        android:spinnerMode="dialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneEdtNumber"
+        app:layout_goneMarginTop="10dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/phoneBtnRegex"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="300dp"
+        android:text="检测"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

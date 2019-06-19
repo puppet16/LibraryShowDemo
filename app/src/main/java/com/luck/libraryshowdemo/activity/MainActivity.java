@@ -5,11 +5,9 @@ import android.os.Bundle;
 import android.util.SparseArray;
 import android.view.View;
 
-
 import com.luck.libraryshowdemo.R;
 import com.luck.libraryshowdemo.base.BaseActivity;
 
-import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends BaseActivity {

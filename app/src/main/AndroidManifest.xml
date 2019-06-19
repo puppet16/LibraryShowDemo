@@ -4,15 +4,15 @@
     package="com.luck.libraryshowdemo">
 
     <application
+        android:name=".base.MyApplication"
         android:allowBackup="true"
+        android:appComponentFactory=""
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
-        android:appComponentFactory=""
-        android:name=".base.MyApplication"
-        tools:replace="android:appComponentFactory"
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:replace="android:appComponentFactory">
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,12 +21,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.ToastyActivity"/>
-        <activity android:name=".activity.SwitchIconActivity"/>
-        <activity android:name=".activity.StyleableToastActivity"/>
-        <activity android:name=".activity.PhoneRegexActivity"/>
-        <activity android:name=".activity.FlowLayoutActivity"/>
-        <activity android:name=".activity.ExcelPanelActivity"/>
+        <activity
+            android:name=".activity.ToastyActivity"
+            android:theme="@style/TranslateTheme" />
+        <activity
+            android:name=".activity.SwitchIconActivity"
+            android:theme="@style/TranslateTheme" />
+        <activity
+            android:name=".activity.StyleableToastActivity"
+            android:theme="@style/TranslateTheme" />
+        <activity
+            android:name=".activity.PhoneRegexActivity"
+            android:theme="@style/TranslateTheme" />
+        <activity
+            android:name=".activity.FlowLayoutActivity"
+            android:theme="@style/TranslateTheme" />
+        <activity
+            android:name=".activity.ExcelPanelActivity"
+            android:theme="@style/TranslateTheme" />
     </application>
 
 </manifest>
