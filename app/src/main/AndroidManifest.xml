@@ -3,10 +3,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.luck.libraryshowdemo">
 
+    <!-- 访问网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 访问Internet资源 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 读写Sdcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取手机状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
     <application
         android:name=".base.MyApplication"
         android:allowBackup="true"
-        android:appComponentFactory=""
+        android:appComponentFactory="null"
         android:icon="@mipmap/icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/icon"

@@ -12,7 +12,7 @@ import androidx.appcompat.widget.AppCompatEditText;
 
 import com.luck.libraryshowdemo.R;
 import com.luck.libraryshowdemo.base.BaseActivity;
-import com.luck.libraryshowdemo.utils.PhoneRegexManager;
+import com.luck.libraryshowdemo.logic.PhoneRegexManager;
 
 import butterknife.BindArray;
 import butterknife.BindView;
