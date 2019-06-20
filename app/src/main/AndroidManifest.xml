@@ -37,8 +37,7 @@
             android:name=".activity.FlowLayoutActivity"
             android:theme="@style/TranslateTheme" />
         <activity
-            android:name=".activity.ExcelPanelActivity"
-            android:theme="@style/TranslateTheme" />
+            android:name=".activity.ExcelPanelActivity" />
     </application>
 
 </manifest>

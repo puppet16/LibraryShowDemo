@@ -1,0 +1,3 @@
+<resources>
+    <dimen name="excelpanel_room_status_cell_length">56dp</dimen>
+</resources>

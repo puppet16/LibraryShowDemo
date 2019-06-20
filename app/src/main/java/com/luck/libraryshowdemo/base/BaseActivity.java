@@ -23,7 +23,7 @@ import butterknife.Unbinder;
  * Date:   2019/6/19
  *************************************************************************************/
 public class BaseActivity extends AppCompatActivity {
-    protected Activity mActivity;
+    protected BaseActivity mActivity;
     public final String TAG = getClass().getSimpleName();
     protected Unbinder mBinder;
     private GestureViewGroup mGestureView;
