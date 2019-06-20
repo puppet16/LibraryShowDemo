@@ -19,53 +19,53 @@
             <Button
                 android:id="@+id/styleable_b1"
                 style="@style/DemoButton"
-                android:text="Colored background" />
+                android:text="@string/styleabletoast_colorback" />
 
             <Button
                 android:id="@+id/styleable_b2"
                 style="@style/DemoButton"
-                android:text="Colored text" />
+                android:text="@string/styleabletoast_colored_text" />
 
 
             <Button
                 android:id="@+id/styleable_b3"
                 style="@style/DemoButton"
-                android:text="Colored bold text" />
+                android:text="@string/styleabletoast_bold_text" />
 
             <Button
                 android:id="@+id/styleable_b4"
                 style="@style/DemoButton"
-                android:text="Custom font" />
+                android:text="@string/styleabletoast_custom_font" />
 
             <Button
                 android:id="@+id/styleable_b5"
                 style="@style/DemoButton"
-                android:text="Corner radius: 5dp" />
+                android:text="@string/styleabletoast_corner_radius_5dp" />
 
             <Button
                 android:id="@+id/styleable_b6"
                 style="@style/DemoButton"
-                android:text="Icon start" />
+                android:text="@string/styleabletoast_icon_start" />
 
             <Button
                 android:id="@+id/styleable_b7"
                 style="@style/DemoButton"
-                android:text="Icon end" />
+                android:text="@string/styleabletoast_icon_end" />
 
             <Button
                 android:id="@+id/styleable_b8"
                 style="@style/DemoButton"
-                android:text="Icon start + end " />
+                android:text="@string/styleabletoast_icon_start_end" />
 
             <Button
                 android:id="@+id/styleable_b9"
                 style="@style/DemoButton"
-                android:text="Colored stroke" />
+                android:text="@string/styleabletoast_colored_stroke" />
 
             <Button
                 android:id="@+id/styleable_b10"
                 style="@style/DemoButton"
-                android:text="All styles" />
+                android:text="@string/styleabletoast_all_styles" />
         </LinearLayout>
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

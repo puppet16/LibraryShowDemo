@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:hint="输入手机号"
+        android:hint="@string/phoneregex_input_number"
         android:inputType="phone"
         android:minWidth="200dp"
         android:text=""
@@ -37,7 +37,7 @@
         android:id="@+id/phoneBtnRegex"
         style="@style/DemoButton"
         android:layout_marginBottom="300dp"
-        android:text="检测"
+        android:text="@string/phoneregex_check"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />

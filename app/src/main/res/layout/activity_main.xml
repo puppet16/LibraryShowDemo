@@ -14,31 +14,31 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnFlowLayout"
             style="@style/DemoButton"
-            android:text="FlowLayoutDemo" />
+            android:text="@string/main_flowlayout" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSwitchIcon"
             style="@style/DemoButton"
-            android:text="SwitchIconDemo" />
+            android:text="@string/main_switch_icon" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnToasty"
             style="@style/DemoButton"
-            android:text="ToastyDemo" />
+            android:text="@string/main_toasty" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnStyleableToast"
             style="@style/DemoButton"
-            android:text="StyleableToastDemo" />
+            android:text="@string/main_styleabletoast" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnPhoneRegex"
             style="@style/DemoButton"
-            android:text="ChinaMobilePhoneNumberRegex" />
+            android:text="@string/main_phoneregex" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnExcelPanel"
             style="@style/DemoButton"
-            android:text="ExcelPanelDemo" />
+            android:text="@string/main_excelpanel" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

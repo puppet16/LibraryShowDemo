@@ -17,7 +17,6 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-
         <com.github.zagum.switchicon.SwitchIconView
             android:id="@+id/switchIconView1"
             android:layout_width="80dp"
@@ -30,7 +29,6 @@
             app:si_no_dash="true"
             app:si_tint_color="#ff3c00"
             app:srcCompat="@drawable/ic_switch_icon_v5" />
-
 
         <com.github.zagum.switchicon.SwitchIconView
             android:id="@+id/switchIconView2"
