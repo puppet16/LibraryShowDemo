@@ -13,53 +13,32 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnFlowLayout"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:text="FlowLayoutDemo"
-            android:textAllCaps="false" />
+            style="@style/DemoButton"
+            android:text="FlowLayoutDemo" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSwitchIcon"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginVertical="10dp"
-            android:text="SwitchIconDemo"
-            android:textAllCaps="false" />
+            style="@style/DemoButton"
+            android:text="SwitchIconDemo" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnToasty"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:text="ToastyDemo"
-            android:textAllCaps="false" />
+            style="@style/DemoButton"
+            android:text="ToastyDemo" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnStyleableToast"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginVertical="10dp"
-            android:text="StyleableToastDemo"
-            android:textAllCaps="false" />
+            style="@style/DemoButton"
+            android:text="StyleableToastDemo" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnPhoneRegex"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:text="ChinaMobilePhoneNumberRegex"
-            android:textAllCaps="false" />
+            style="@style/DemoButton"
+            android:text="ChinaMobilePhoneNumberRegex" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnExcelPanel"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginVertical="10dp"
-            android:text="ExcelPanelDemo"
-            android:textAllCaps="false" />
+            style="@style/DemoButton"
+            android:text="ExcelPanelDemo" />
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

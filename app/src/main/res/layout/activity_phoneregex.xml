@@ -35,8 +35,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/phoneBtnRegex"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        style="@style/DemoButton"
         android:layout_marginBottom="300dp"
         android:text="检测"
         app:layout_constraintBottom_toBottomOf="parent"
