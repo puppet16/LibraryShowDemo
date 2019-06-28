@@ -12,22 +12,17 @@ import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Build;
 import android.os.LocaleList;
-import android.provider.SyncStateContract;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
 
 import java.util.Locale;
 
-/**
- * Created by dumingwei on 2018/5/31 0031.
- */
+
 public class LanguageUtils {
 
     private static final String TAG = "LanguageUtil";
     private static final String LOCAL_LANGUAGE = "local_language";
     private static volatile LanguageUtils mInstance;
-
-
     private static Context mContext;
     private static Resources mResources;
     private static Context configurationContext;

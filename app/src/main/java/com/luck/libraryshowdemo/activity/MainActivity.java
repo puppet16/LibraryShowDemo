@@ -1,13 +1,11 @@
 package com.luck.libraryshowdemo.activity;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.util.SparseArray;
 import android.view.View;
 
 import com.luck.libraryshowdemo.R;
 import com.luck.libraryshowdemo.base.BaseActivity;
-import com.luck.libraryshowdemo.utils.LanguageUtils;
 
 import butterknife.OnClick;
 
