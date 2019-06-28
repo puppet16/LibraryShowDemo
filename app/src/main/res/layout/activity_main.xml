@@ -40,5 +40,10 @@
             android:id="@+id/btnExcelPanel"
             style="@style/DemoButton"
             android:text="@string/main_excelpanel" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLanguageChange"
+            style="@style/DemoButton"
+            android:text="@string/main_language_change"/>
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

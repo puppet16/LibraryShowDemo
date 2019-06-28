@@ -568,9 +568,9 @@ public final class LogUtils {
         String versionName = "";
         int versionCode = 0;
         try {
-            PackageInfo pi = Utils.getApp()
+            PackageInfo pi = ApplicationUtils.getApp()
                     .getPackageManager()
-                    .getPackageInfo(Utils.getApp().getPackageName(), 0);
+                    .getPackageInfo(ApplicationUtils.getApp().getPackageName(), 0);
             if (pi != null) {
                 versionName = pi.versionName;
                 versionCode = pi.versionCode;
@@ -649,16 +649,16 @@ public final class LogUtils {
         private int         mStackDeep         = 1;     // The stack's deep of log.
         private int         mStackOffset       = 0;     // The stack's offset of log.
         private int         mSaveDays          = -1;    // The save days of log.
-        private String      mProcessName       = Utils.getCurrentProcessName();
+        private String      mProcessName       = ApplicationUtils.getCurrentProcessName();
         private IFileWriter mFileWriter;
 
         private Config() {
             if (mDefaultDir != null) return;
             if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())
-                    && Utils.getApp().getExternalCacheDir() != null)
-                mDefaultDir = Utils.getApp().getExternalCacheDir() + FILE_SEP + "log" + FILE_SEP;
+                    && ApplicationUtils.getApp().getExternalCacheDir() != null)
+                mDefaultDir = ApplicationUtils.getApp().getExternalCacheDir() + FILE_SEP + "log" + FILE_SEP;
             else {
-                mDefaultDir = Utils.getApp().getCacheDir() + FILE_SEP + "log" + FILE_SEP;
+                mDefaultDir = ApplicationUtils.getApp().getCacheDir() + FILE_SEP + "log" + FILE_SEP;
             }
         }
 

@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.luck.libraryshowdemo.R;
 import com.luck.libraryshowdemo.base.BaseActivity;
+import com.luck.libraryshowdemo.utils.LanguageUtils;
 
 import butterknife.OnClick;
 
@@ -20,17 +21,22 @@ public class MainActivity extends BaseActivity {
             put(R.id.btnStyleableToast, StyleableToastActivity.class);
             put(R.id.btnSwitchIcon, SwitchIconActivity.class);
             put(R.id.btnToasty, ToastyActivity.class);
+            put(R.id.btnLanguageChange, LanguageActivity.class);
         }
     };
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected void initPage() {
+
+    }
+
+    @Override
+    protected int getPageLayoutId() {
+        return R.layout.activity_main;
     }
 
     @OnClick({R.id.btnExcelPanel, R.id.btnFlowLayout, R.id.btnPhoneRegex, R.id.btnStyleableToast,
-            R.id.btnSwitchIcon, R.id.btnToasty})
+            R.id.btnSwitchIcon, R.id.btnToasty, R.id.btnLanguageChange})
     public void onClick(View v) {
         startActivity(new Intent(mActivity, mActivityArray.get(v.getId())));
     }

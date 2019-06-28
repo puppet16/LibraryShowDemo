@@ -19,9 +19,13 @@ import static android.graphics.Typeface.BOLD_ITALIC;
 public class ToastyActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_toasty);
+    protected void initPage() {
+
+    }
+
+    @Override
+    protected int getPageLayoutId() {
+        return R.layout.activity_toasty;
     }
 
     @OnClick({R.id.toasty_button_custom_config, R.id.toasty_button_error_toast, R.id.toasty_button_info_toast,

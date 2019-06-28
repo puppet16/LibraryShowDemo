@@ -17,10 +17,13 @@ public class StyleableToastActivity extends BaseActivity {
     private int redColor = Color.parseColor("#FF5A5F");
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_styleabletoast);
+    protected void initPage() {
 
+    }
+
+    @Override
+    protected int getPageLayoutId() {
+        return R.layout.activity_styleabletoast;
     }
 
     @OnClick({R.id.styleable_b1, R.id.styleable_b2,R.id.styleable_b3,

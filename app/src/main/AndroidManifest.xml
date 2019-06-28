@@ -47,6 +47,7 @@
             android:theme="@style/TranslateTheme" />
         <activity
             android:name=".activity.ExcelPanelActivity" />
+        <activity android:name=".activity.LanguageActivity"/>
     </application>
 
 </manifest>

@@ -44,7 +44,7 @@ import java.util.concurrent.Executors;
  * Date:   2019/6/20
  *************************************************************************************/
 
-public final class Utils {
+public final class ApplicationUtils {
 
     private static final ActivityLifecycleImpl ACTIVITY_LIFECYCLE = new ActivityLifecycleImpl();
     private static final ExecutorService       UTIL_POOL          = Executors.newFixedThreadPool(3);
@@ -54,7 +54,7 @@ public final class Utils {
     private static Application sApplication;
 
 
-    private Utils() {
+    private ApplicationUtils() {
         throw new UnsupportedOperationException("u can't instantiate me...");
     }
 
@@ -119,20 +119,20 @@ public final class Utils {
     static Context getTopActivityOrApp() {
         if (isAppForeground()) {
             Activity topActivity = ACTIVITY_LIFECYCLE.getTopActivity();
-            return topActivity == null ? Utils.getApp() : topActivity;
+            return topActivity == null ? ApplicationUtils.getApp() : topActivity;
         } else {
-            return Utils.getApp();
+            return ApplicationUtils.getApp();
         }
     }
 
     static boolean isAppForeground() {
-        ActivityManager am = (ActivityManager) Utils.getApp().getSystemService(Context.ACTIVITY_SERVICE);
+        ActivityManager am = (ActivityManager) ApplicationUtils.getApp().getSystemService(Context.ACTIVITY_SERVICE);
         if (am == null) return false;
         List<ActivityManager.RunningAppProcessInfo> info = am.getRunningAppProcesses();
         if (info == null || info.size() == 0) return false;
         for (ActivityManager.RunningAppProcessInfo aInfo : info) {
             if (aInfo.importance == ActivityManager.RunningAppProcessInfo.IMPORTANCE_FOREGROUND) {
-                if (aInfo.processName.equals(Utils.getApp().getPackageName())) {
+                if (aInfo.processName.equals(ApplicationUtils.getApp().getPackageName())) {
                     return true;
                 }
             }
@@ -149,12 +149,12 @@ public final class Utils {
         if (Looper.myLooper() == Looper.getMainLooper()) {
             runnable.run();
         } else {
-            Utils.UTIL_HANDLER.post(runnable);
+            ApplicationUtils.UTIL_HANDLER.post(runnable);
         }
     }
 
     public static void runOnUiThreadDelayed(final Runnable runnable, long delayMillis) {
-        Utils.UTIL_HANDLER.postDelayed(runnable, delayMillis);
+        ApplicationUtils.UTIL_HANDLER.postDelayed(runnable, delayMillis);
     }
 
     static String getCurrentProcessName() {
@@ -184,7 +184,7 @@ public final class Utils {
     }
 
     private static String getCurrentProcessNameByAms() {
-        ActivityManager am = (ActivityManager) Utils.getApp().getSystemService(Context.ACTIVITY_SERVICE);
+        ActivityManager am = (ActivityManager) ApplicationUtils.getApp().getSystemService(Context.ACTIVITY_SERVICE);
         if (am == null) return "";
         List<ActivityManager.RunningAppProcessInfo> info = am.getRunningAppProcesses();
         if (info == null || info.size() == 0) return "";
@@ -202,7 +202,7 @@ public final class Utils {
     private static String getCurrentProcessNameByReflect() {
         String processName = "";
         try {
-            Application app = Utils.getApp();
+            Application app = ApplicationUtils.getApp();
             Field loadedApkField = app.getClass().getField("mLoadedApk");
             loadedApkField.setAccessible(true);
             Object loadedApk = loadedApkField.get(app);
@@ -255,7 +255,7 @@ public final class Utils {
             float sDurationScale = (Float) sDurationScaleField.get(null);
             if (sDurationScale == 0f) {
                 sDurationScaleField.set(null, 1f);
-                Log.i("Utils", "setAnimatorsEnabled: Animators are enabled now!");
+                Log.i("ApplicationUtils", "setAnimatorsEnabled: Animators are enabled now!");
             }
         } catch (NoSuchFieldException e) {
             e.printStackTrace();
@@ -376,7 +376,7 @@ public final class Utils {
         }
 
         private void updateAppConfig(final Activity activity) {
-            Resources resources = Utils.getApp().getResources();
+            Resources resources = ApplicationUtils.getApp().getResources();
             DisplayMetrics dm = resources.getDisplayMetrics();
             Configuration config = resources.getConfiguration();
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
@@ -385,7 +385,7 @@ public final class Utils {
                 config.setLocale(activity.getResources().getConfiguration().locale);
             }
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
-                Utils.getApp().createConfigurationContext(config);
+                ApplicationUtils.getApp().createConfigurationContext(config);
             } else {
                 resources.updateConfiguration(config, dm);
             }
@@ -465,7 +465,7 @@ public final class Utils {
         private static void fixSoftInputLeaks(final Activity activity) {
             if (activity == null) return;
             InputMethodManager imm =
-                    (InputMethodManager) Utils.getApp().getSystemService(Context.INPUT_METHOD_SERVICE);
+                    (InputMethodManager) ApplicationUtils.getApp().getSystemService(Context.INPUT_METHOD_SERVICE);
             if (imm == null) return;
             String[] leakViews = new String[]{"mLastSrvView", "mCurRootView", "mServedView", "mNextServedView"};
             for (String leakView : leakViews) {
@@ -490,7 +490,7 @@ public final class Utils {
 
         @Override
         public boolean onCreate() {
-            Utils.init(getContext());
+            ApplicationUtils.init(getContext());
             return true;
         }
     }

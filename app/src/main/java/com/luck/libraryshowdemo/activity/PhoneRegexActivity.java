@@ -30,10 +30,13 @@ public class PhoneRegexActivity extends BaseActivity {
     String[] mRegexType;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_phoneregex);
+    protected void initPage() {
         initListener();
+    }
+
+    @Override
+    protected int getPageLayoutId() {
+        return R.layout.activity_phoneregex;
     }
 
     private void initListener() {

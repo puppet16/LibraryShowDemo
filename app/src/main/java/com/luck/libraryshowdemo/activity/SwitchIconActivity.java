@@ -14,9 +14,13 @@ import butterknife.OnClick;
 public class SwitchIconActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_switchicon);
+    protected void initPage() {
+
+    }
+
+    @Override
+    protected int getPageLayoutId() {
+        return R.layout.activity_switchicon;
     }
 
     @OnClick({R.id.switchIconView1, R.id.switchIconView2, R.id.switchIconView3,

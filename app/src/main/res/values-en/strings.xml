@@ -1,0 +1,59 @@
+<resources>
+
+    <!--Main-->
+    <string name="main_flowlayout">FlowLayoutDemo</string>
+    <string name="main_switch_icon">SwitchIconDemo</string>
+    <string name="main_toasty">ToastyDemo</string>
+    <string name="main_styleabletoast">StyleableToastDemo</string>
+    <string name="main_phoneregex">ChinaMobilePhoneNumberRegex</string>
+    <string name="main_excelpanel">ExcelPanelDemo</string>
+    <!--Toasty-->
+    <string name="toasty_normal_toast_with_icon">NORMAL TOAST (WITH ICON)</string>
+    <string name="toasty_normal_toast_without_icon">NORMAL TOAST (WITHOUT ICON)</string>
+    <string name="toasty_warning_toast">WARNING TOAST</string>
+    <string name="toasty_info_toast">INFO TOAST</string>
+    <string name="toasty_info_toast_with_formatting">INFO TOAST WITH FORMATTING</string>
+    <string name="toasty_error_toast">ERROR TOAST</string>
+    <string name="toasty_success_toast">SUCCESS TOAST</string>
+    <string name="toasty_custom_configuration">CUSTOM CONFIGURATION</string>
+    <string name="toasty_error_message">This is an error toast.</string>
+    <string name="toasty_success_message">Success!</string>
+    <string name="toasty_info_message">Here is some info for you.</string>
+    <string name="toasty_warning_message">Beware of the dog.</string>
+    <string name="toasty_normal_message_without_icon">Normal toast w/o icon</string>
+    <string name="toasty_normal_message_with_icon">Normal toast w/ icon</string>
+    <string name="toasty_custom_show_last">only show last toast</string>
+    <!--PhoneRegex-->
+    <string name="phoneregex_check">Check</string>
+    <string name="phoneregex_input_number">Input Number</string>
+    <string-array name="phoneRegexType">
+        <item>All Num(phone+DataCard+NetCard)</item>
+        <item>All SMS support numbers (Phone+NetCard)</item>
+        <item>All Phone</item>
+        <item>mobile card </item>
+        <item>unicom card </item>
+        <item>telecom card </item>
+        <item>all virtual mobile phone CARDS </item>
+        <item>virtual mobile card </item>
+        <item>virtual unicom card </item>
+        <item>virtual telecom card </item>
+    </string-array>
+    <!--StyleableToast-->
+    <string name="styleabletoast_colorback">Colored background</string>
+    <string name="styleabletoast_colored_text">Colored text</string>
+    <string name="styleabletoast_bold_text">Colored bold text</string>
+    <string name="styleabletoast_custom_font">Custom font</string>
+    <string name="styleabletoast_corner_radius_5dp">Corner radius: 5dp</string>
+    <string name="styleabletoast_icon_start">Icon start</string>
+    <string name="styleabletoast_icon_end">Icon end</string>
+    <string name="styleabletoast_icon_start_end">Icon start + end</string>
+    <string name="styleabletoast_colored_stroke">Colored stroke</string>
+    <string name="styleabletoast_all_styles">All styles</string>
+    <string name="main_language_change">Language Change</string>
+    <string name="language_auto">Auto</string>
+    <string name="language_chinese">Simplified Chinese</string>
+    <string name="language_english">English</string>
+    <string name="language_now_is">Now is </string>
+
+
+</resources>

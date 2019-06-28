@@ -1,32 +1,32 @@
 <resources>
-    <string name="app_name">LibraryShowDemo</string>
+    <string name="app_name" translatable="false">LibraryShowDemo</string>
 
     <!--Main-->
-    <string name="main_flowlayout">FlowLayoutDemo</string>
-    <string name="main_switch_icon">SwitchIconDemo</string>
-    <string name="main_toasty">ToastyDemo</string>
-    <string name="main_styleabletoast">StyleableToastDemo</string>
-    <string name="main_phoneregex">ChinaMobilePhoneNumberRegex</string>
-    <string name="main_excelpanel">ExcelPanelDemo</string>
+    <string name="main_flowlayout">流动布局示例</string>
+    <string name="main_switch_icon">切换图片示例</string>
+    <string name="main_toasty">个性化吐息示例</string>
+    <string name="main_styleabletoast">格式化吐息示例</string>
+    <string name="main_phoneregex">中国号码匹配示例</string>
+    <string name="main_excelpanel">表格示例</string>
     <!--Toasty-->
-    <string name="toasty_normal_toast_with_icon">NORMAL TOAST (WITH ICON)</string>
-    <string name="toasty_normal_toast_without_icon">NORMAL TOAST (WITHOUT ICON)</string>
-    <string name="toasty_warning_toast">WARNING TOAST</string>
-    <string name="toasty_info_toast">INFO TOAST</string>
-    <string name="toasty_info_toast_with_formatting">INFO TOAST WITH FORMATTING</string>
-    <string name="toasty_error_toast">ERROR TOAST</string>
-    <string name="toasty_success_toast">SUCCESS TOAST</string>
-    <string name="toasty_custom_configuration">CUSTOM CONFIGURATION</string>
-    <string name="toasty_error_message">This is an error toast.</string>
-    <string name="toasty_success_message">Success!</string>
-    <string name="toasty_info_message">Here is some info for you.</string>
-    <string name="toasty_warning_message">Beware of the dog.</string>
-    <string name="toasty_normal_message_without_icon">Normal toast w/o icon</string>
-    <string name="toasty_normal_message_with_icon">Normal toast w/ icon</string>
-    <string name="toasty_custom_message">sudo kill -9 everyone</string>
+    <string name="toasty_normal_toast_with_icon">带图片的正常吐息</string>
+    <string name="toasty_normal_toast_without_icon">不带图片的正常吐息</string>
+    <string name="toasty_warning_toast">警告吐息</string>
+    <string name="toasty_info_toast">信息吐息</string>
+    <string name="toasty_info_toast_with_formatting">带格式化的信息提示</string>
+    <string name="toasty_error_toast">错误吐息</string>
+    <string name="toasty_success_toast">成功吐息</string>
+    <string name="toasty_custom_configuration">自定义内容</string>
+    <string name="toasty_error_message">这是个错误提示</string>
+    <string name="toasty_success_message">成功!</string>
+    <string name="toasty_info_message">这是个信息提示</string>
+    <string name="toasty_warning_message">这是个警告吐息</string>
+    <string name="toasty_normal_message_without_icon">不带图片的正常吐息</string>
+    <string name="toasty_normal_message_with_icon">带图片的正常吐息</string>
+    <string name="toasty_custom_message" translatable="false">"sudo kill -9 everyone啊哈 "</string>
     <string name="toasty_custom_show_last">只显示最新的Toast</string>
     <!--PhoneRegex-->
-    <string name="phoneregex_check">Check</string>
+    <string name="phoneregex_check">检查</string>
     <string name="phoneregex_input_number">输入手机号</string>
     <string-array name="phoneRegexType">
         <item>所有号码（手机卡 + 数据卡 + 上网卡）</item>
@@ -41,16 +41,21 @@
         <item>虚拟电信卡</item>
     </string-array>
     <!--StyleableToast-->
-    <string name="styleabletoast_colorback">Colored background</string>
-    <string name="styleabletoast_colored_text">Colored text</string>
-    <string name="styleabletoast_bold_text">Colored bold text</string>
-    <string name="styleabletoast_custom_font">Custom font</string>
-    <string name="styleabletoast_corner_radius_5dp">Corner radius: 5dp</string>
-    <string name="styleabletoast_icon_start">Icon start</string>
-    <string name="styleabletoast_icon_end">Icon end</string>
-    <string name="styleabletoast_icon_start_end">Icon start + end</string>
-    <string name="styleabletoast_colored_stroke">Colored stroke</string>
-    <string name="styleabletoast_all_styles">All styles</string>
+    <string name="styleabletoast_colorback">背景色</string>
+    <string name="styleabletoast_colored_text">文本颜色</string>
+    <string name="styleabletoast_bold_text">文本粗体</string>
+    <string name="styleabletoast_custom_font">自定义字体</string>
+    <string name="styleabletoast_corner_radius_5dp">圆角: 5dp</string>
+    <string name="styleabletoast_icon_start">起始图片</string>
+    <string name="styleabletoast_icon_end">"末尾图片 "</string>
+    <string name="styleabletoast_icon_start_end">起始+末尾图片</string>
+    <string name="styleabletoast_colored_stroke">斜体</string>
+    <string name="styleabletoast_all_styles">所有格式</string>
+    <string name="main_language_change">语言切换</string>
+    <string name="language_auto">自动</string>
+    <string name="language_chinese">简体中文</string>
+    <string name="language_english">英文</string>
+    <string name="language_now_is">现在就是</string>
 
 
 </resources>

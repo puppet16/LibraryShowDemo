@@ -59,14 +59,17 @@ public class ExcelPanelActivity extends BaseActivity implements ExcelPanel.OnLoa
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_excelpanel);
+    protected void initPage() {
         adapter = new ExcelPanelAdapter(mActivity, blockListener);
         excelPanel.setAdapter(adapter);
         excelPanel.setOnLoadMoreListener(this);
         excelPanel.addOnScrollListener(onScrollListener);
         initData();
+    }
+
+    @Override
+    protected int getPageLayoutId() {
+        return R.layout.activity_excelpanel;
     }
 
     private ExcelPanel.OnScrollListener onScrollListener = new ExcelPanel.OnScrollListener() {

@@ -22,10 +22,13 @@ public class FlowLayoutActivity extends BaseActivity {
     FlowLayout mFlowLayout;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_flowlayout);
+    protected void initPage() {
         initData();
+    }
+
+    @Override
+    protected int getPageLayoutId() {
+        return R.layout.activity_flowlayout;
     }
 
     private void initData() {
