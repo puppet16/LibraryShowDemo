@@ -8,3 +8,4 @@
 ## 6. [StyleableToast](https://github.com/Muddz/StyleableToast)
 ## 7. PreferencesUtils,SharedPreferences管理类&emsp;抽离自[AndroidUtilCode](https://github.com/Blankj/AndroidUtilCode)
 ## 8. LanguageUtils 切换语言管理类
+## 9. [Device-Year_Class](https://github.com/facebook/device-year-class)
