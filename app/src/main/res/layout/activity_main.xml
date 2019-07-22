@@ -45,5 +45,10 @@
             android:id="@+id/btnLanguageChange"
             style="@style/DemoButton"
             android:text="@string/main_language_change"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnDecideYear"
+            style="@style/DemoButton"
+            android:text="@string/main_decide_year"
+            android:contentDescription="@string/main_decide_year_cescription"/>
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

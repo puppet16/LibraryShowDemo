@@ -20,6 +20,7 @@ public class MainActivity extends BaseActivity {
             put(R.id.btnSwitchIcon, SwitchIconActivity.class);
             put(R.id.btnToasty, ToastyActivity.class);
             put(R.id.btnLanguageChange, LanguageActivity.class);
+            put(R.id.btnDecideYear, DecideYearActivity.class);
         }
     };
 
@@ -34,7 +35,7 @@ public class MainActivity extends BaseActivity {
     }
 
     @OnClick({R.id.btnExcelPanel, R.id.btnFlowLayout, R.id.btnPhoneRegex, R.id.btnStyleableToast,
-            R.id.btnSwitchIcon, R.id.btnToasty, R.id.btnLanguageChange})
+            R.id.btnSwitchIcon, R.id.btnToasty, R.id.btnLanguageChange, R.id.btnDecideYear})
     public void onClick(View v) {
         startActivity(new Intent(mActivity, mActivityArray.get(v.getId())));
     }

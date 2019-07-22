@@ -48,6 +48,7 @@
         <activity
             android:name=".activity.ExcelPanelActivity" />
         <activity android:name=".activity.LanguageActivity"/>
+        <activity android:name=".activity.DecideYearActivity" />
     </application>
 
 </manifest>

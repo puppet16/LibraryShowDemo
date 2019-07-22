@@ -50,5 +50,7 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.8.5'
     //EventBus
     implementation 'org.greenrobot:eventbus:3.1.1'
+    //device-year-class 会根据手机的内存、CPU核心数和频率等信息决定设备属于哪一个年份
+    implementation 'com.facebook.device.yearclass:yearclass:2.1.0'
 
 }
